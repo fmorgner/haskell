@@ -11,7 +11,7 @@ s5 = [] : [] -- [[]]
 s6 = [] : [] : [] -- [[], []]
 s7 = ([] : []) : [] -- [[[]]]
 s8 = (([] : []) : []) : [] -- [[[[]]]]
-s9 = 'a' : 'b' : [] -- “ab” (or ['a', 'b'] under the hood)
+s9 = 'a' : 'b' : [] -- "ab" (or ['a', 'b'] under the hood)
 
 {-
 Aufgabe 2 [List desugaring] Schreiben Sie die folgenden Ausdrücke so um, dass sie die eckigen Klammern [ und ] nur noch als Listenkonstruktor [] ('nil') enthalten.
@@ -19,7 +19,7 @@ Aufgabe 2 [List desugaring] Schreiben Sie die folgenden Ausdrücke so um, dass s
 
 d1 = [1, 2, 3] -- 1 : 2 : 3 : []
 d2 = [[1, 2], [], [3, 4]] -- (1 : 2 : []) : [] : (3 : 4 : []) : []
-d3 = [[], ["a"], [[]]] -- [] : (('a' : []) : []) : ([] : []) : [] (this would be printed as [[], [“a”], [“”]])
+d3 = [[], ["a"], [[]]] -- [] : (('a' : []) : []) : ([] : []) : [] (this would be printed as [[], ["a"], [""]])
 
 {-
 Aufgabe 3 [Pattern Matching] Gegeben seien die folgenden Funktions- und Wertdeklarationen. Geben Sie zu jeder Funktion Ihren Typ an, und werten Sie die Ausdrücke in den Wertdeklarationen aus. Begründen Sie allfällige Fehler bei den Datentypen oder beim Pattern Matching.
@@ -49,7 +49,7 @@ a15 = f1 (1 : 2 : 3 : []) -- (1, 2, [3]) :: Num t => (t, t, [t])
 a25 = f2 (1 : 2 : 3 : []) -- *** Exception: Non-exhaustive patterns in function f2
 a35 = f3 (1 : 2 : 3 : []) -- *** Exception: Non-exhaustive patterns in function f3
 
-a16 = f1 ['a', 'b', 'c'] -- ('a', 'b', ['c']) or ('a', 'b', ”c”) :: (Char, Char, [Char])
+a16 = f1 ['a', 'b', 'c'] -- ('a', 'b', ['c']) or ('a', 'b', "c") :: (Char, Char, [Char])
 a17 = f1 [[1], [2, 3], []] -- ([1], [2, 3], [[]]) :: Num t => ([t], [t], [[t]])
 a18 = f1 (1 : 2 : 3 : [4, 5]) -- (1, 2, [3, 4, 5]) :: Num t => (t, t, [t])
 a19 = f1 [1 .. 100] -- (1, 2, [3..100]) :: Num t => (t, t, [t])
@@ -109,7 +109,7 @@ h3 ((x : y) : z) = y
 h3 ([] : _) = "2"
 h3 [] = "3"
 
-c31 = h3 ["dimdi"] -- “imdi” :: [Char]
-c32 = h3 ["", "dimdi", "domdo"] -- “2” :: [Char]
-c33 = h3 [[]] -- “2” :: [Char]
-c34 = h3 [] -- “3” :: [Char]
+c31 = h3 ["dimdi"] -- "imdi" :: [Char]
+c32 = h3 ["", "dimdi", "domdo"] -- "2" :: [Char]
+c33 = h3 [[]] -- "2" :: [Char]
+c34 = h3 [] -- "3" :: [Char]
