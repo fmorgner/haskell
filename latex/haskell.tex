@@ -1,0 +1,19 @@
+\documentclass[a4paper,9pt]{article}
+
+\usepackage[cm]{fullpage}
+\usepackage[outputdir=.build]{minted}
+\newcommand{\hsfile}[1]{\inputminted{haskell}{../haskell/#1.hs}}
+
+\begin{document}
+
+\section{Haskell 2010}
+\subsection{Typing}
+\hsfile{exam2010/problem_1}
+\subsection{Polynomial}
+\hsfile{exam2010/problem_2}
+\subsection{Higher Order Functions}
+\hsfile{exam2010/problem_3}
+\subsection{Type Checking}
+\hsfile{exam2010/problem_4}
+
+\end{document}
