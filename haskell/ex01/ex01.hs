@@ -88,10 +88,10 @@ Aufgabe 4 [Typen von Funktionen und Listen] Gegeben seien die folgenden Deklarat
 -}
 
 f1 :: Int -> Int
-f1 x = x^2 + x + 1
+f1 x = x ^ 2 + x + 1
 
 f2 :: Int -> Int
-f2 x = 2*x + 1
+f2 x = 2 * x + 1
 
 {-
 Bestimmen Sie, ob die folgenden Ausdrücke korrekt getypt sind, und falls ja, geben Sie den entsprechenden Typ an.
@@ -113,10 +113,10 @@ Aufgabe 5 [Typen von Funktionen mit Currying] Gegeben seien die folgenden Deklar
 -}
 
 g1 :: Int -> Int -> Int -> Int
-g1 x y z = x^2 + y^2 + z^2
+g1 x y z = x ^ 2 + y ^ 2 + z ^ 2
 
 g2 :: Int -> Int -> Int
-g2 x y = 2*x + 2*y
+g2 x y = 2 * x + 2 * y
 
 {-
 Bestimmen Sie, ob die folgenden Ausdrücke korrekt getypt sind, und falls ja, geben Sie den entsprechenden Typ an.
