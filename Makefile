@@ -3,7 +3,7 @@
 DOCUMENT=haskell
 export DOCUMENT
 
-QPDF=$(shell command -v qpdf 2>/dev/null)
+QPDF:=$(shell command -v qpdf 2>/dev/null)
 
 all: copy
 	@echo "Build complete!"
