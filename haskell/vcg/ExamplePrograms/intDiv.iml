@@ -1,0 +1,13 @@
+precondition
+  ((((m = M) cand (n = N)) cand (m >= 0)) cand (n > 0))
+postcondition
+  (((((m = M) cand (n = N)) cand (m = ((q * n) + r))) cand (0 <= r)) cand (r < n))
+command
+  q := 0 ;
+  r := m;
+  while (r >= n)
+    invariant ((((m = M) cand (n = N)) cand (m = ((q * n) + r))) cand (0 <= r))
+  do
+    q := (q + 1) ;
+    r := (r - n)
+  endwhile
