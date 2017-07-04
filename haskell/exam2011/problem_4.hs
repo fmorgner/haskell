@@ -58,7 +58,7 @@ Beispiel: Die Funktion
   implies :: Bool -> Bool -> Bool
   implies p q = p || not q
 
-soll die Implikation p ⇒ q ihrer beiden Eingaben p und q ausgeben. Leider können wir die Funktion aber nicht unmittelbar testen, da sie curried ist, unsere Funktion test aber nur uncurried Funktionen akzeptiert. Betrachten Sie nun eine Funktion toTuple, die eine curried Funktion mit zwei Parametern als Eingabe nimmt, und eine gleichwertige uncurried Funktion mit einem geeigneten Paar aus zwei Parametern als Ausgabe liefert. Mit Hilfe dieser Funktion können wir nun unseren Test leicht durchführen:
+soll die Implikation p -> q ihrer beiden Eingaben p und q ausgeben. Leider können wir die Funktion aber nicht unmittelbar testen, da sie curried ist, unsere Funktion test aber nur uncurried Funktionen akzeptiert. Betrachten Sie nun eine Funktion toTuple, die eine curried Funktion mit zwei Parametern als Eingabe nimmt, und eine gleichwertige uncurried Funktion mit einem geeigneten Paar aus zwei Parametern als Ausgabe liefert. Mit Hilfe dieser Funktion können wir nun unseren Test leicht durchführen:
 
   test (toTuple implies) testCasesImplies
 

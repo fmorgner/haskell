@@ -18,7 +18,7 @@ f1 _               = 4 -- (e)
 
 {-
 Aufgabe 2:
-Eine quadratische n × n-Matrix ganzer Zahlen werde durch eine Liste von n Listen, jede mit der Länge n, von Int dargestellt (n ≥ 0). Schreiben Sie eine Funktion f2 :: [[Int]] -> Int unter Verwendung von Pattern Matching, die eine derartig dargestellte Matrix auf die Summe ihrer Diagonalelemente abbildet, für n = 0, 1, 2. Für alle anderen Werte von n ist der Funktionswert undefiniert.
+Eine quadratische n x n-Matrix ganzer Zahlen werde durch eine Liste von n Listen, jede mit der Länge n, von Int dargestellt (n >= 0). Schreiben Sie eine Funktion f2 :: [[Int]] -> Int unter Verwendung von Pattern Matching, die eine derartig dargestellte Matrix auf die Summe ihrer Diagonalelemente abbildet, für n = 0, 1, 2. Für alle anderen Werte von n ist der Funktionswert undefiniert.
 -}
 
 -- Annahme: Nur Hauptdiagonale aufsummieren.
